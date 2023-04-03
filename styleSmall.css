@@ -66,5 +66,18 @@
     .inputModule:focus {
         outline: none;
     }
+    #buttonGrid {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .buttonDiv {
+        width: 150px;
+    }
+    .tipAmountButton {
+        height: 40px;
+        width: 100%;
+    }
 }
 

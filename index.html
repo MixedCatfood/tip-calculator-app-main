@@ -17,21 +17,23 @@
     <div id="headerChild">TTER</div>
   </div>
   <div id="appbody">
-    <div id="billAmount" class="userInputContainer">
+    <div class="userInputContainer">
       Bill
       <div class="inputDiv">
         <img class="inputIcon" src="./images/icon-dollar.svg">
-        <input class="inputModule">
+        <input class="inputModule" id="billAmount">
       </div>
     </div>
     <div id="tipPercent">
-        <div id="tipTitle">Select Tip %</div>
-      <button class="tipAmountButton">5%</button>
-      <button class="tipAmountButton">10%</button>
-      <button class="tipAmountButton">15%</button>
-      <button class="tipAmountButton">25%</button>
-      <button class="tipAmountButton">50%</button>
-      <input class="tipAmountButton" id="customButton">
+        Select Tip %
+        <div id="buttonGrid">
+          <div class="buttonDiv"><button class="tipAmountButton">5%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">10%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">15%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">25%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">50%</button></div>
+          <div class="buttonDiv"><input class="tipAmountButton" id="customTip"></div>
+        </div>
     </div>
     <div id="numberOfPeople" class="userInputContainer">
       Number of People
