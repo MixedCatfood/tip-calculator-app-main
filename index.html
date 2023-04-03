@@ -5,40 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styleSmall.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
   </style>
+  <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+  <div id="appheader">
+    <div id="headerChild">SPLI</div>
+    <div id="headerChild">TTER</div>
+  </div>
+  <div id="appbody">
+    <div class="userInputContainer">
+      Bill
+      <div class="inputDiv">
+        <img class="inputIcon" src="./images/icon-dollar.svg">
+        <input class="inputModule" id="billAmount">
+      </div>
+    </div>
+    <div id="tipPercent">
+        Select Tip %
+        <div id="buttonGrid">
+          <div class="buttonDiv"><button class="tipAmountButton">5%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">10%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">15%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">25%</button></div>
+          <div class="buttonDiv"><button class="tipAmountButton">50%</button></div>
+          <div class="buttonDiv"><input class="tipAmountButton" id="customTip"></div>
+        </div>
+    </div>
+    <div id="numberOfPeople" class="userInputContainer">
+      Number of People
+      <div class="inputDiv">
+        <img class="inputIcon" src="./images/icon-person.svg">
+        <input class="inputModule">
+      </div>
+    </div>
+    <div id="output">
+      <div class="outputValue">
+        Tip Amount
+        / person
+      </div>
+      <div class="outputValue">
+        Total
+        / person
+      </div>
+      <button>Reset</button>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.carsontucker.net/" target="_blank">Carson Tucker</a>.
   </div>
 </body>
 </html>
