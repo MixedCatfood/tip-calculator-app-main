@@ -31,5 +31,10 @@
         display: flex;
         flex-direction: column;
     }
+    #tipPercent {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
