@@ -120,7 +120,12 @@
         grid-template-columns: 1fr 1fr;
     }
     .outputTotal {
-
+        text-align: right;
+        font-size: 1.8rem;
+        color: rgba(38,194,173,255)
+    }
+    .darker {
+        color: rgba(95,151,152,255)
     }
     #resetButton {
         background-color: rgba(38,194,173,255);
@@ -130,6 +135,7 @@
         height: 40px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
