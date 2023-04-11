@@ -4,6 +4,7 @@
         margin: 0px;
         font-family: 'Space Mono', monospace;
         font-weight: 700;
+        color: rgba(104,119,122,255);
     }
     
     #appbody {
@@ -103,6 +104,11 @@
         text-align: right;
         border-radius: 5px;
         border: none;
+        height: 40px;
+        width: 150px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        padding-right: 15px;
     }
     #output {
         width: 85%;
