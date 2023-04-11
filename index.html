@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styleSmall.css">
+  <link rel="stylesheet" href="styleLarge.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
   </style>
@@ -16,33 +17,40 @@
     <div id="headerChild">SPLI</div>
     <div id="headerChild">TTER</div>
   </div>
+
   <div id="appbody">
-    <div class="userInputContainer">
-      Bill
-      <div class="inputDiv">
-        <img class="inputIcon" src="./images/icon-dollar.svg">
-        <input class="inputModule" id="billAmount">
-      </div>
-    </div>
-    <div id="tipPercent">
-        Select Tip %
-        <div id="buttonGrid">
-          <div class="buttonDiv left-column"><button class="tipAmountButton">5%</button></div>
-          <div class="buttonDiv right-column"><button class="tipAmountButton">10%</button></div>
-          <div class="buttonDiv left-column"><button class="tipAmountButton">15%</button></div>
-          <div class="buttonDiv right-column"><button class="tipAmountButton">25%</button></div>
-          <div class="buttonDiv left-column"><button class="tipAmountButton">50%</button></div>
-          <div class="right-column"><input class="tipAmountButton" id="customTip" type="text" placeholder="Custom" ></div>
+    <div id="desktopAppLeft">
+      <div class="userInputContainer">
+        Bill
+        <div class="inputDiv">
+          <img class="inputIcon" src="./images/icon-dollar.svg">
+          <input class="inputModule" id="billAmount">
         </div>
-    </div>
-    <div id="numberOfPeople" class="userInputContainer">
-      Number of People
-      <div class="inputDiv">
-        <img class="inputIcon" src="./images/icon-person.svg">
-        <input class="inputModule">
+      </div>
+
+      <div id="tipPercent">
+          Select Tip %
+          <div id="buttonGrid">
+            <div class="buttonDiv left-column" id="grid-1"><button class="tipAmountButton">5%</button></div>
+            <div class="buttonDiv right-column" id="grid-2"><button class="tipAmountButton">10%</button></div>
+            <div class="buttonDiv left-column" id="grid-3"><button class="tipAmountButton">15%</button></div>
+            <div class="buttonDiv right-column" id="grid-4"><button class="tipAmountButton">25%</button></div>
+            <div class="buttonDiv left-column" id="grid-5"><button class="tipAmountButton">50%</button></div>
+            <div class="right-column" id="grid-6"><input class="tipAmountButton" id="customTip" type="text" placeholder="Custom" ></div>
+          </div>
+      </div>
+
+      <div id="numberOfPeople" class="userInputContainer">
+        Number of People
+        <div class="inputDiv">
+          <img class="inputIcon" src="./images/icon-person.svg">
+          <input class="inputModule">
+        </div>
       </div>
     </div>
-    <div id="output">
+
+    <div id="desktopAppRight">
+      <div id="output">
         <div class="outputModule">
           <div class="outPutDescription">
             <span>Tip Amount</span>
@@ -64,11 +72,13 @@
           </div>
         </div>
         <button id="resetButton">RESET</button>
+      </div>
     </div>
   </div>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.carsontucker.net/" target="_blank">Carson Tucker</a>.
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
+    <span>Coded by <a href="https://www.carsontucker.net/" target="_blank">Carson Tucker</a>.</span>
   </div>
 </body>
 </html>
