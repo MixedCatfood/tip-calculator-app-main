@@ -1,4 +1,4 @@
-@media (max-width: 799px){
+@media (min-width: 800px){
     body {
         background-color: rgb(197,228,231);
         margin: 0px;
@@ -8,10 +8,13 @@
     }
     
     #appbody {
-        width: 100%;
+        width: 800px;
         background-color: rgba(255,255,255,255);
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
     }
     #appheader {
         height: 150px;
@@ -23,6 +26,9 @@
         letter-spacing: .3rem;
         font-size: 1.5rem;
     }
+    /* #desktopAppLeft {
+
+    } */
     .userInputContainer {
         width: 85%;
         margin-left: auto;
@@ -33,9 +39,12 @@
         flex-direction: column;
     }
     #tipPercent {
+        height: 200px;
         width: 85%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .inputDiv {
         background-color: rgba(243,248,251,255);
@@ -71,22 +80,18 @@
         margin-top: 5px;
         margin-bottom: 5px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 15px;
-    }
-    .left-column {
-        justify-self: left;
-    }
-    .right-column {
-        justify-self: right;
+        grid-column-gap: 20px;
     }
     .buttonDiv {
-        width: 150px;
+        width: 100px;
         background-color: rgba(0,71,75,255);
         color: rgba(224,254,255,255);
         border-radius: 5px;
         font-size: 1.5rem;
     }
+
     .tipAmountButton {
         height: 40px;
         width: 100%;
@@ -112,6 +117,9 @@
     }
     #output {
         width: 85%;
+        height: 400px;
+        margin-top: 8%;
+        margin-bottom: 8%;
         margin-left: auto;
         margin-right: auto;
         background-color: rgba(0,71,75,255);
@@ -151,7 +159,9 @@
         font-weight: 700;
     }
     .attribution {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
 }
-
