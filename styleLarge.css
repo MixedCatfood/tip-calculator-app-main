@@ -96,6 +96,11 @@
         font-size: 1.5rem;
     }
 
+    .buttonDiv:hover {
+        background-color: rgba(38,194,173,255);
+        color: rgba(0,71,75,255);
+    }
+
     .tipAmountButton {
         height: 40px;
         width: 100%;

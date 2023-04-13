@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styleSmall.css">
   <link rel="stylesheet" href="styleLarge.css">
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
   </style>
@@ -32,12 +33,12 @@
         <div id="tipPercent">
             Select Tip %
             <div id="buttonGrid">
-              <div class="buttonDiv left-column" id="grid-1"><button class="tipAmountButton">5%</button></div>
-              <div class="buttonDiv right-column" id="grid-2"><button class="tipAmountButton">10%</button></div>
-              <div class="buttonDiv left-column" id="grid-3"><button class="tipAmountButton">15%</button></div>
-              <div class="buttonDiv right-column" id="grid-4"><button class="tipAmountButton">25%</button></div>
-              <div class="buttonDiv left-column" id="grid-5"><button class="tipAmountButton">50%</button></div>
-              <div class="right-column" id="grid-6"><input class="tipAmountButton" id="customTip" type="text" placeholder="Custom" ></div>
+              <div class="buttonDiv left-column" id="grid-1"><button class="tipAmountButton" onclick="calculateExpenses(.05)">5%</button></div>
+              <div class="buttonDiv right-column" id="grid-2"><button class="tipAmountButton" onclick="calculateExpenses(.1)">10%</button></div>
+              <div class="buttonDiv left-column" id="grid-3"><button class="tipAmountButton" onclick="calculateExpenses(.15)">15%</button></div>
+              <div class="buttonDiv right-column" id="grid-4"><button class="tipAmountButton" onclick="calculateExpenses(.25)">25%</button></div>
+              <div class="buttonDiv left-column" id="grid-5"><button class="tipAmountButton" onclick="calculateExpenses(.5)">50%</button></div>
+              <div class="right-column" id="grid-6"><input class="tipAmountButton" id="customTip" onchange="customTip()" type="text" placeholder="Custom" ></div>
             </div>
         </div>
 
@@ -45,7 +46,7 @@
           Number of People
           <div class="inputDiv">
             <img class="inputIcon" src="./images/icon-person.svg">
-            <input class="inputModule">
+            <input class="inputModule" id="numOfPeople">
           </div>
         </div>
       </div>
@@ -73,7 +74,7 @@
             </div>
           </div>
           <div id="spacerDiv"></div>
-          <button id="resetButton">RESET</button>
+          <button id="resetButton" onclick="reset()">RESET</button>
         </div>
       </div>
     </div>
@@ -84,4 +85,5 @@
     </div>
   </div>
 </body>
+<script src="splitter.js"></script>
 </html>
