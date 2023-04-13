@@ -13,73 +13,75 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-  <div id="appheader">
-    <div id="headerChild">SPLI</div>
-    <div id="headerChild">TTER</div>
-  </div>
+  <div id="wrapper">
+    <div id="appheader">
+      <div id="headerChild">SPLI</div>
+      <div id="headerChild">TTER</div>
+    </div>
 
-  <div id="appbody">
-    <div id="desktopAppLeft">
-      <div class="userInputContainer">
-        Bill
-        <div class="inputDiv">
-          <img class="inputIcon" src="./images/icon-dollar.svg">
-          <input class="inputModule" id="billAmount">
+    <div id="appbody">
+      <div id="desktopAppLeft">
+        <div class="userInputContainer">
+          Bill
+          <div class="inputDiv">
+            <img class="inputIcon" src="./images/icon-dollar.svg">
+            <input class="inputModule" id="billAmount">
+          </div>
+        </div>
+
+        <div id="tipPercent">
+            Select Tip %
+            <div id="buttonGrid">
+              <div class="buttonDiv left-column" id="grid-1"><button class="tipAmountButton">5%</button></div>
+              <div class="buttonDiv right-column" id="grid-2"><button class="tipAmountButton">10%</button></div>
+              <div class="buttonDiv left-column" id="grid-3"><button class="tipAmountButton">15%</button></div>
+              <div class="buttonDiv right-column" id="grid-4"><button class="tipAmountButton">25%</button></div>
+              <div class="buttonDiv left-column" id="grid-5"><button class="tipAmountButton">50%</button></div>
+              <div class="right-column" id="grid-6"><input class="tipAmountButton" id="customTip" type="text" placeholder="Custom" ></div>
+            </div>
+        </div>
+
+        <div id="numberOfPeople" class="userInputContainer">
+          Number of People
+          <div class="inputDiv">
+            <img class="inputIcon" src="./images/icon-person.svg">
+            <input class="inputModule">
+          </div>
         </div>
       </div>
 
-      <div id="tipPercent">
-          Select Tip %
-          <div id="buttonGrid">
-            <div class="buttonDiv left-column" id="grid-1"><button class="tipAmountButton">5%</button></div>
-            <div class="buttonDiv right-column" id="grid-2"><button class="tipAmountButton">10%</button></div>
-            <div class="buttonDiv left-column" id="grid-3"><button class="tipAmountButton">15%</button></div>
-            <div class="buttonDiv right-column" id="grid-4"><button class="tipAmountButton">25%</button></div>
-            <div class="buttonDiv left-column" id="grid-5"><button class="tipAmountButton">50%</button></div>
-            <div class="right-column" id="grid-6"><input class="tipAmountButton" id="customTip" type="text" placeholder="Custom" ></div>
+      <div id="desktopAppRight">
+        <div id="output">
+          <div class="outputModule">
+            <div class="outPutDescription">
+              <span>Tip Amount</span>
+              <br>
+              <span class="darker">/ person</span>
+            </div>
+            <div class="outputTotal">
+              <span id="tipPerPerson">$0.00</span>
+            </div>
           </div>
-      </div>
-
-      <div id="numberOfPeople" class="userInputContainer">
-        Number of People
-        <div class="inputDiv">
-          <img class="inputIcon" src="./images/icon-person.svg">
-          <input class="inputModule">
+          <div class="outputModule">
+            <div class="outPutDescription">
+              <span>Total</span>
+              <br>
+              <span class="darker">/ person</span>
+            </div>
+            <div class="outputTotal">
+              <span id="totalPerPerson">$0.00</span>
+            </div>
+          </div>
+          <div id="spacerDiv"></div>
+          <button id="resetButton">RESET</button>
         </div>
       </div>
     </div>
-
-    <div id="desktopAppRight">
-      <div id="output">
-        <div class="outputModule">
-          <div class="outPutDescription">
-            <span>Tip Amount</span>
-            <br>
-            <span class="darker">/ person</span>
-          </div>
-          <div class="outputTotal">
-            <span id="tipPerPerson">$0.00</span>
-          </div>
-        </div>
-        <div class="outputModule">
-          <div class="outPutDescription">
-            <span>Total</span>
-            <br>
-            <span class="darker">/ person</span>
-          </div>
-          <div class="outputTotal">
-            <span id="totalPerPerson">$0.00</span>
-          </div>
-        </div>
-        <div id="gridPlaceholder"></div>
-        <button id="resetButton">RESET</button>
-      </div>
+  
+    <div class="attribution">
+      <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
+      <span>Coded by <a href="https://www.carsontucker.net/" target="_blank">Carson Tucker</a>.</span>
     </div>
-  </div>
-
-  <div class="attribution">
-    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
-    <span>Coded by <a href="https://www.carsontucker.net/" target="_blank">Carson Tucker</a>.</span>
   </div>
 </body>
 </html>
